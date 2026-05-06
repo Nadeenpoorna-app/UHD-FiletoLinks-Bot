@@ -16,17 +16,19 @@ from utils import temp
 async def start_command(client, message):
     await message.reply_text(
         text=(
-            "👋 <b>ʜɪɪ,\n\n🗿 ɪ ᴀᴍ ʟᴀᴛᴇsᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ᴛᴏ ʟɪɴᴋs ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ, ᴊᴜsᴛ sᴇɴᴅ ᴀɴʏ ᴍᴇᴅɪᴀ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ.\n\n ᴘʟᴇᴀsᴇ ᴜsᴇ & sʜᴀʀᴇ ᴍᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ᥙs ᴍᴀᴅᴇ ʙʏ ᴜʜᴅ ʙᴏᴛs™</b> 🔥"
+            "👋 <b>ʜɪɪ!</b>\n\n"
+    "👨🏻‍💻 <b>ɪ’ᴍ ᴀ ʟᴀᴛᴇsᴛ-ɢᴇɴ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ ➜ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.</b>\n"
+    "📩 <b>ᴊᴜsᴛ sᴇɴᴅ ᴀɴʏ ғɪʟᴇ ᴏʀ ᴍᴇᴅɪᴀ</b> ᴛᴏ ɢᴇᴛ:\n\n"
+    "✅ <b>ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ</b>\n"
+    "✅ <b>sᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋ</b>\n\n"
+    "✨ <b>ᴘʟᴇᴀsᴇ ᴜsᴇ • sʜᴀʀᴇ • sᴜᴘᴘᴏʀᴛ</b>\n\n"
+    "— <b>ᴍᴀᴅᴇ ʙʏ 𝗡𝗔𝗗𝗘𝗘𝗡𝘅𝗗𝗘𝗩™ 🔥</b>"
         ),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/UHDBots"),
-                    InlineKeyboardButton("💡 ᴄᴏᴅᴇs", url="https://github.com/UHD-Botz/UHD-FiletoLinks-Bot")
-                ],
-                [
-                    InlineKeyboardButton("📜 ᴜʜᴅ ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/UHD_NETWORK"),
-                    InlineKeyboardButton("🌐 ᴀᴇ ᴇɴᴄᴏᴅᴇs", url="https://bit.ly/AEEncodes")
+                    InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇs", url="https://t.me/nadeenx_dev"),
+                    InlineKeyboardButton("🪀 ​ᴡʜᴀᴛꜱᴀᴘᴘ​", url="https://whatsapp.com/channel/0029VagN2qW3gvWUBhsjcn3I")
                 ]
             ]
         ),
@@ -79,7 +81,7 @@ async def stream_start(client, message):
             f"<b>📦 ғɪʟᴇ sɪᴢᴇ:</b> <i>{filesize}</i>\n\n"
             f"<b>📥 ᴅᴏᴡɴʟᴏᴀᴅ:</b> <i>{download}</i>\n\n"
             f"<b>🖥 ᴡᴀᴛᴄʜ:</b> <i>{stream}</i>\n\n"
-            "<b>🚸 ɴᴏᴛᴇ:</b> ʟɪɴᴋs ᴡɪʟʟ ᴡᴏʀᴋ ᴜɴᴛɪʟ ɪ ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ғɪʟᴇ."
+            "<b>🚸 ɴᴏᴛᴇ:</b> ʟɪɴᴋs ᴡɪʟʟ ᴡᴏʀᴋ ᴜɴᴛɪʟ 24h ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ғɪʟᴇ.\nMade by: Nadeen Poorna"
         )
 
         await message.reply_text(
