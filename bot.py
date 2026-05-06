@@ -117,14 +117,14 @@ def add_command_handlers():
 # ---------------- Bot Startup ----------------
 async def start():
     print("\n" + "═"*35)
-    print(" 🚀 UHD BOTS STARTING...")
+    print(" 🚀 NADEEN BOTS STARTING...")
     print(" ✨ Status: Speed Boosted")
-    print(" 📢 Visit: t.me/UHDBots")
-    print(" 🌐 Site: bit.ly/4dCws8h")
-    print(" ⭐ Repo: github.com/UHD-Botz/UHD-FiletoLinks-Bot")
+    print(" 📢 Visit: t.me/Nadeenx_dev")
+    print(" 🌐 Site: dinkamovieslk.app")
+    print(" ⭐ Repo: github.com/Nadeenpoorna-app")
     print("═"*35 + "\n")
 
-    await UHDBots.start()
+    await UHDots.start()
     bot_info = await UHDBots.get_me()
     await initialize_clients()
     load_plugins()
@@ -137,7 +137,7 @@ async def start():
 
     tz = pytz.timezone("Asia/Kolkata")
     now = datetime.now(tz)
-    await UHDBots.send_message(chat_id=LOG_CHANNEL, text=f"🚀 **UHD Bot Restarted!**\n📅 {date.today()}\n🕒 {now.strftime('%I:%M:%S %p')}")
+    await UHDBots.send_message(chat_id=LOG_CHANNEL, text=f"🚀 **NADEEN Bot Restarted!**\n📅 {date.today()}\n🕒 {now.strftime('%I:%M:%S %p')}")
 
     app = web.AppRunner(await web_server())
     await app.setup()
