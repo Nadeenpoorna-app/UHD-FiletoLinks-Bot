@@ -4,7 +4,7 @@
 # 🚫 Removing or Modifying these Lines will Cause the bot to Stop Working.
 
 
-FROM python:3.10-slim-buster
+FROM python:3.10-slim-bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY requirements.txt .
