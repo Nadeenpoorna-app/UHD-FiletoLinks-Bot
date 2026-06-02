@@ -124,7 +124,7 @@ async def start():
     print(" ⭐ Repo: github.com/Nadeenpoorna-app")
     print("═"*35 + "\n")
 
-    await UHDots.start()
+    await UHDBots.start()
     bot_info = await UHDBots.get_me()
     await initialize_clients()
     load_plugins()
