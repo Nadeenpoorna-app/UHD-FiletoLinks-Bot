@@ -50,8 +50,8 @@ async def _0x_sf(_0x_rq, _0x_fid, _0x_hsh):
     _0x_st = _0x_rq.http_range.start or 0
     _0x_en = (_0x_rq.http_range.stop or _0x_fsz) - 1
 
-    # --- ENCRYPTED RENAME & CHUNK LOGIC ---
-    _0x_t = _0x_dec('QFVIREJvdHM=') # @UHDBots
+   # --- ENCRYPTED RENAME & CHUNK LOGIC ---
+    _0x_t = "@Nadeen" # @Nadeen ලකුණ සමඟ නම මෙතනට එකතු වේ
     _0x_on = _0x_f.file_name or f"{secrets.token_hex(2)}.bin"
     _0x_fn = f"[{_0x_t}] {_0x_on.replace('_', ' ').replace('-', ' ')}" if _0x_t not in _0x_on else _0x_on
 
