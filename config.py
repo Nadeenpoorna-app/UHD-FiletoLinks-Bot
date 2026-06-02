@@ -22,7 +22,7 @@ MULTI_CLIENT = False
 SLEEP_THRESHOLD = int(environ.get("SLEEP_THRESHOLD", "60"))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
 ON_HEROKU = "DYNO" in environ
-URL = environ.get("URL", "https://nadeen-link.up.railway.app/")
+URL = environ.get("URL", "https://nadeen-file.up.railway.app/")
 
 
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003757405063"))
