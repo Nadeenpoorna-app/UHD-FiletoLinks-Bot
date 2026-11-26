@@ -33,6 +33,8 @@ async def _0x_fs(_0x_req):
         _0x_m = re.search(r"^([a-zA-Z0-9_-]{6})(\d+)$", _0x_p)
         _0x_h, _0x_f = (_0x_m.group(1), int(_0x_m.group(2))) if _0x_m else (_0x_req.rel_url.query.get(_0x_dec('aGFzaA==')), int(re.search(r"(\d+)", _0x_p).group(1)))
         return await _0x_sf(_0x_req, _0x_f, _0x_h)
+    except web.HTTPException:
+        raise
     except Exception as _0x_e:
         logging.error(f"ERR: {_0x_e}")
         raise web.HTTPInternalServerError(text=_0x_dec('U3RyZWFtIEVycm9y'))
@@ -58,13 +60,13 @@ async def _0x_sf(_0x_rq, _0x_fid, _0x_hsh):
     _0x_cs = 1048576 # 1MB Fix
     _0x_os = _0x_st - (_0x_st % _0x_cs)
     _0x_tl = _0x_en - _0x_st + 1
-    _0x_pr = math.ceil(_0x_en / _0x_cs) - math.floor(_0x_os / _0x_cs)
+    _0x_pr = (_0x_en - _0x_os) // _0x_cs + 1
 
     _0x_bd = _0x_tc.yield_file(_0x_f, _0x_ci, _0x_os, _0x_st - _0x_os, _0x_en % _0x_cs + 1, _0x_pr, _0x_cs)
 
     return web.Response(
         status=206 if _0x_rh else 200,
-        body=_0x_bd,
+        body=None if _0x_rq.method == 'HEAD' else _0x_bd,
         headers={
             _0x_dec('Q29udGVudC1UeXBl'): _0x_f.mime_type or _0x_dec('dmlkZW8vbXA0'),
             _0x_dec('Q29udGVudC1SYW5nZQ=='): f"bytes {_0x_st}-{_0x_en}/{_0x_fsz}",
