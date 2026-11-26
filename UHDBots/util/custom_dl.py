@@ -32,7 +32,7 @@ class ByteStreamer:
 
     async def get_file_properties(self, id: int) -> FileId:
         """Return cached file properties or generate them if not cached."""
-        if id not in self.cached_file_ids:
+        if id not in self.cached_file_ids or time.time() - self.cache_last_access.get(id, 0) > 300:
             await self.generate_file_properties(id)
             logging.debug(f"Cached file properties for message with ID {id}")
         self.cache_last_access[id] = time.time()
