@@ -81,7 +81,7 @@ async def stream_start(client, message):
             f"<b>📦 ғɪʟᴇ sɪᴢᴇ:</b> <i>{filesize}</i>\n\n"
             f"<b>📥 ᴅᴏᴡɴʟᴏᴀᴅ:</b> <i>{download}</i>\n\n"
             f"<b>🖥 ᴡᴀᴛᴄʜ:</b> <i>{stream}</i>\n\n"
-            "<b>🚸 ɴᴏᴛᴇ:</b> ʟɪɴᴋs ᴡɪʟʟ ᴡᴏʀᴋ ᴜɴᴛɪʟ 24h ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ғɪʟᴇ.\nMade by: Nadeen Poorna"
+            "<b>🚸 ɴᴏᴛᴇ:</b> Links have no automatic expiry while the storage message and service remain available.\nMade by: Nadeen Poorna"
         )
 
         await message.reply_text(
